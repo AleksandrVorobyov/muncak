@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  color: #000;
+  line-height: 1;
+  background-color: #fbfcfc;
+  z-index: -2;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-big {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 36px;
+  color: rgb(38, 50, 56);
+  font-family: "Myriad Pro";
+  line-height: 1.389;
+}
+
+@font-face {
+  font-family: Myriad Pro;
+  src: url('../libs/fonts/MyriadProRegular.ttf');
+}

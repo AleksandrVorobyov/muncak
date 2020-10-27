@@ -1,0 +1,140 @@
+.header {
+  position: relative;
+  background: url("../img/header/bg.png") top right no-repeat,
+    url("../img/header/bg-1.png") bottom left no-repeat;
+  padding: 80px 250px;
+  height: 1000px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: 50px;
+    border-radius: 50%;
+    background-color: rgb(245, 147, 153);
+    width: 120px;
+    height: 120px;
+    opacity: 0.502;
+    z-index: -1;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: rgb(245, 147, 153);
+    width: 120px;
+    height: 120px;
+    opacity: 0.502;
+    z-index: 2;
+  }
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.header-logo {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1;
+
+  span:first-child {
+    color: rgb(40, 112, 219);
+  }
+}
+
+.menu__list {
+  display: flex;
+
+  li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.menu__link {
+  padding: 8px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 13px;
+  transition: 0.3s linear;
+
+  &:hover {
+    color: #14215e;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.header-column {
+  position: relative;
+  margin-left: 100px;
+  max-width: 420px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -120px;
+    width: 104px;
+    height: 104px;
+
+    border-radius: 50%;
+    background-color: rgb(82, 200, 249);
+    opacity: 0.502;
+  }
+}
+
+.Ellipse_1_copy_6 {
+  position: absolute;
+  left: 815px;
+  top: 543px;
+  z-index: 123;
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 50px;
+  color: rgb(28, 32, 86);
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  margin: 0;
+  margin-bottom: 110px;
+  font-size: 18px;
+  color: rgba(45, 32, 88, 0.651);
+  line-height: 2.222;
+}
+
+.header__button {
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(251, 252, 252);
+  font-weight: bold;
+  line-height: 1;
+  padding: 30px 60px;
+  background-color: rgb(40, 112, 219);
+  box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
+  text-decoration: none;
+  border-radius: 40px;
+  transition: 0.4s linear;
+
+  &:hover {
+    background-color: #14215e;
+    box-shadow: 0px 22px 28px 10px rgba(17, 83, 165, 0.21);
+  }
+}

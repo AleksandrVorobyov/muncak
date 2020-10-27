@@ -1,0 +1,26 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Главная страница';
+	- var pageClass= "ui";
+
+block content
+	//- header
+	include ../sections/header.pug
+	//- header
+	main
+		//- секция hiking-trail
+		include ../sections/hiking-trail.pug
+		//- секция hiking-trail
+
+		//- секция support
+		include ../sections/support.pug
+		//- секция support
+
+		//- секция support
+		include ../sections/news.pug
+		//- секция support
+	//- footer
+	include ../sections/footer.pug
+	//- footer
