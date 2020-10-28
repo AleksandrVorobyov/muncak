@@ -1,6 +1,6 @@
 .hiking-trail {
   position: relative;
-  padding: 100px 0 100px;
+  padding: 100px 15px 100px;
   margin-bottom: 100px;
   background: url("../img/main/bg-2.png") bottom right no-repeat,
     url("../img/main/bg-1.png") bottom left no-repeat;
@@ -69,22 +69,31 @@
 }
 
 .hiking-trail__card-title {
+  margin-bottom: 30px;
   margin-top: 0;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   font-family: "Myriad Pro";
   color: rgb(38, 50, 56);
   line-height: 1.498;
   text-align: left;
+
+  @media (min-width: 1500px) {
+    font-size: 24px;
+  }
 }
 
 .hiking-trail__card-text {
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Myriad Pro";
   color: #546e7a;
   line-height: 1.498;
   text-align: left;
-  margin-bottom: 0;
+  margin: 0;
+
+  @media (min-width: 1500px) {
+    font-size: 20px;
+  }
 }
 
 .hiking-trail__card-button {
